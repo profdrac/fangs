@@ -79,7 +79,7 @@ for cls in clsses:
                     else: form[10] = msg
                 else: form[10] = 'N/A'
     form[14] = 'N/A'
-    webbrowser.open('https://docs.google.com/forms/d/e/1FAIpQLScIQO1viKMQ99KUh30lwI4qpcBNL6e6CVbcJQMxGLyam9OGyw/viewform',autoraise=True)
+    webbrowser.open('form-url-comes-here',autoraise=True)
     p.sleep(5)
     for i in range(0, 15):
         p.press('tab')
