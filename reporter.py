@@ -1,5 +1,5 @@
 '''
-Reporter
+Reporter v1
 --------
 Automatically fills the daily class reports of online classes for me :)
 
