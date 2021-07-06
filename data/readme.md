@@ -1,0 +1,1 @@
+data used by reporter v1 and v2

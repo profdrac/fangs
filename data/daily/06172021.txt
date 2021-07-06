@@ -1,0 +1,3 @@
+1\5\Using Scanner Class to get input\Programs (7,8,9,10) using Scanner class, WAP tp convert total days to years, months and days\Solving simple logical problems using input via Scanner\y
+2\5\Using Scanner Class to get input\Programs (7,8,9,10) using Scanner class, WAP tp convert total days to years, months and days\Solving simple logical problems using input via Scanner\y
+4\5\Overloading functions in Java\Programs 15 (Area of geometrical shapes), Program 23(Sum of series using function-overloadng)\Solving problems using function-overloading, types of function calls, Pure & Impure functions\y

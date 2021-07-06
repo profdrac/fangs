@@ -1,0 +1,8 @@
+1,Revision of Class IX Syllabus
+2,Library Classes
+3,Arrays
+4,String Handling
+5,User-Defined Methods
+6,Class as the Basis of all Computation
+7,Constructors
+8,Encapsulation and Inheritance

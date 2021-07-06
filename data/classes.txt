@@ -1,0 +1,6 @@
+6A,VI-A,General Knowledge,Ms. Himani Sharma,4=4
+6B,VI-B,General Knowledge,Mrs. Preeti Sharma,2=1
+8A,VIII-A,Computer Science,Mr. Ankush Thakur,0=4,1=4,4=5
+9A,IX-A,Computer Applications,Mrs. Shalini Verma,3=1,4=1,5=3
+9B,IX-B,Computer Applications,Mrs. Namita Sinha,3=2,4=2,5=2
+10A,X-AB,Computer Applications,Mr. Padam Jamwal & Mrs. Meenakshi Chauhan,2=4,3=4,5=1

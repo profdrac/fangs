@@ -1,0 +1,8 @@
+1,Operating System
+2,Functions in Excel 2013
+3,Charts in Excel 2013
+4,Algorithms and Flowcharts
+5,Introduction to Programming
+6,Conditional Statements in Java
+7,APP Development
+8,Networking Concepts

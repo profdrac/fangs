@@ -1,0 +1,4 @@
+1\5\Ways to get input in Java\Page 118: IV.1. What do you mean by Scanner class? Why is it preferred?, IV.2. What are different ways to give inputs in a Java program?, III.1. Difference between nextInt() and nextFloat()\Input by Function Arguments and by using Scanner class, Functions of Scanner class\y
+2\5\Ways to get input in Java\Page 118: IV.1. What do you mean by Scanner class? Why is it preferred?, IV.2. What are different ways to give inputs in a Java program?, III.1. Difference between nextInt() and nextFloat()\Input by Function Arguments and by using Scanner class, Functions of Scanner class\y
+4\14\Need of a language\Daily used words in different languages\Naming important words of different languages\n
+5\8\Internet terminology\Page 118: 4.d. What is Protocol?, 4.f. How does TCP/IP work?\Meaning and need of protocol, different types of protocols in computers\y

@@ -1,0 +1,2 @@
+1\14\Need of a language\Daily used words in different languages\Naming important words of different languages\n
+4\5\Parameters in function-definition\Page 312: 3. WAP to check for Pronic number using a function, 4. WAP to show factors of a number using a function, 5. Evaluate expression using function\Formal and Actual parameters, programs using user-defined functions\y

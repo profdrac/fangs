@@ -1,0 +1,3 @@
+1\5\Call-by-value, Call-by-reference, Pure & Impure functions\Revision of Chapter 5\Solving exercise questions based on Functions\y
+2\6\Functions\Explain work of Math.min(), Math.max(), Math.pow(), Math.sqrt(), Math.cbrt() and Math.log()\Using mathemetical functions in Java\y
+3\6\Functions\Explain work of Math.min(), Math.max(), Math.pow(), Math.sqrt(), Math.cbrt() and Math.log()\Using mathemetical functions in Java\y
