@@ -1,0 +1,59 @@
+#! /usr/bin/python3
+
+import sys
+import fileinput
+import subprocess as sp
+
+if(len(sys.argv)!=2):
+    print("I need a pic name first, Captain!")
+    exit(0)
+
+pic = str(sys.argv[1])
+sp.run(["wal", "-i", pic])
+
+jackPath = '/home/ashu/.themes/jacc-theme/'
+
+with open('/home/ashu/.cache/wal/colors', 'r') as f:
+    colors = [line.rstrip() for line in f]
+
+with open(jackPath+'last', 'r') as f:
+    last_colors = [line.rstrip() for line in f]
+
+with fileinput.FileInput(jackPath+'metacity-1/metacity-theme-3.xml', inplace=True) as f:
+    for line in f:
+        print(line.replace(last_colors[0], colors[0]), end='')
+
+with fileinput.FileInput(jackPath+'metacity-1/metacity-theme-3.xml', inplace=True) as f:
+    for line in f:
+        print(line.replace(last_colors[2], colors[2]), end='')
+
+with fileinput.FileInput(jackPath+'metacity-1/metacity-theme-3.xml', inplace=True) as f:
+    for line in f:
+        print(line.replace(last_colors[3], colors[3]), end='')
+
+with fileinput.FileInput(jackPath+'metacity-1/metacity-theme-3.xml', inplace=True) as f:
+    for line in f:
+        print(line.replace(last_colors[7], colors[7]), end='')
+
+with fileinput.FileInput(jackPath+'metacity-1/midnight-blue-metacity-sketch.svg', inplace=True) as f:
+    for line in f:
+        print(line.replace(last_colors[0], colors[0]), end='')
+
+with fileinput.FileInput(jackPath+'gtk-3.0/gtk.css', inplace=True) as f:
+    for line in f:
+        print(line.replace(last_colors[0], colors[0]), end='')
+
+with fileinput.FileInput(jackPath+'gtk-3.0/gtk.css', inplace=True) as f:
+    for line in f:
+        print(line.replace(last_colors[7], colors[7]), end='')
+
+with open(jackPath+'last', 'w') as f:
+    for color in colors:
+        f.write(color+"\n")
+
+sp.run(['gsettings', 'set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Mint-Y-Dark'])
+sp.run(['gsettings', 'set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'jacc-theme'])
+print('✿ Setting Window Manager Theme... done')
+sp.run(['gsettings', 'set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Mint-Y-Dark'])
+sp.run(['gsettings', 'set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'jacc-theme'])
+print('✿ Setting GTK Theme... done')
