@@ -17,12 +17,11 @@ import pyautogui as p
 from datetime import datetime
 
 def getTime(period):
-    if period=='1': return '9:00-9:25'
-    elif period=='2': return '9:35-10:00'
-    elif period=='3': return '10:10-10:35'
-    elif period=='4': return '11:00-11:25'
-    elif period=='5': return '11:35-12:00'
-    else: return '12:10-12:35'
+    if period=='1': return '9:00-9:30'
+    elif period=='2': return '9:40-10:10'
+    elif period=='3': return '10:20-10:50'
+    elif period=='4': return '11:30-12:00'
+    else: return '12:10-12:40'
 
 def getTodaysClasses(cfile):
     x = ''
@@ -84,7 +83,7 @@ for cls in clsses:
                     else: form[10] = msg
                 else: form[10] = 'N/A'
     form[14] = 'N/A'
-    webbrowser.open('google-form-url',autoraise=True)
+    webbrowser.open('https://docs.google.com/forms/d/e/1FAIpQLScIQO1viKMQ99KUh30lwI4qpcBNL6e6CVbcJQMxGLyam9OGyw/viewform',autoraise=True)
     p.sleep(5)
     for i in range(0, 15):
         p.press('tab')
