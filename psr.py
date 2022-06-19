@@ -65,7 +65,7 @@ while True:
     fi = '/home/ashu/.scripts/last'
     with open(fi,'r') as f: tit = f.readline()
     if tit != title:
-        download_thumb(new_post)
+        if thumb==True: download_thumb(new_post)
         flair = new_post['data']['children'][0]['data']['link_flair_css_class']
         if flair=='paid' or title.lower().find('pay')!=-1 or title.lower().find('tip')!=-1 or title.find('$')!=-1:
             cmd = 'notify-send -a "psr" -u critical '+"'  '"+" '"+title+"'"
