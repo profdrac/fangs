@@ -1,8 +1,3 @@
-# PSR v4
-#
-# Notifies new photoshoprequest post every minute
-# Also lets download pic/gallery of the post
-
 import requests
 import json
 import time
@@ -11,6 +6,7 @@ import os
 sub = 'photoshoprequest'
 timer = 60
 free = False
+thumb = True
 
 def get_post():
     try:
@@ -46,6 +42,16 @@ def download_gallery(new_post):
             break
     return
 
+def download_thumb(new_post):
+    try:
+        turl = new_post['data']['children'][0]['data']['thumbnail']
+        tdata = requests.get(turl).content
+        with open('/home/ashu/.scripts/thumb.jpg', 'wb') as handler:
+            handler.write(tdata)
+        return
+    except:
+        return
+
 def download(new_post):
     if 'media_metadata' in new_post['data']['children'][0]['data']:
         download_gallery(new_post)
@@ -59,6 +65,7 @@ while True:
     fi = '/home/ashu/.scripts/last'
     with open(fi,'r') as f: tit = f.readline()
     if tit != title:
+        download_thumb(new_post)
         flair = new_post['data']['children'][0]['data']['link_flair_css_class']
         if flair=='paid' or title.lower().find('pay')!=-1 or title.lower().find('tip')!=-1 or title.find('$')!=-1:
             cmd = 'notify-send -a "psr" -u critical '+"'  '"+" '"+title+"'"
@@ -66,7 +73,8 @@ while True:
         else:
             cmd = 'notify-send -a "psr" '+"'  '"+" '"+title+"'"
             if free==True: download(new_post)
-        os.system(cmd)
+        if thumb==True: os.system(cmd+' -i "/home/ashu/.scripts/thumb.jpg"')
+        else: os.system(cmd)
         f = open(fi,'w')
         f.write(title)
         f.close()
